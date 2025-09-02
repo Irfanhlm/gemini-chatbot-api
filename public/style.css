@@ -1,0 +1,182 @@
+/* General Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main Chat Container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  height: 80vh;
+  max-height: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.5em;
+}
+
+/* Chat Box Area */
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Spacing between messages */
+}
+
+/* General Message Bubble Styles */
+.message {
+  padding: 10px 16px;
+  border-radius: 18px;
+  max-width: 75%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* User Message Bubble */
+.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bot Message Bubble */
+.bot-message {
+  background-color: #e9e9eb;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* Error Message Style */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* "Thinking..." Placeholder Style */
+.thinking {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Chat Input Form */
+#chat-form {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: border-color 0.2s;
+}
+
+#user-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+#chat-form button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#chat-form button:hover {
+  background-color: #0056b3;
+}
+
+/* --- Markdown Specific Styles --- */
+.bot-message p {
+  margin: 0 0 0.5em 0;
+}
+
+.bot-message p:last-child {
+  margin-bottom: 0;
+}
+
+.bot-message ul, .bot-message ol {
+  padding-left: 20px;
+  margin: 0.5em 0;
+}
+
+.bot-message pre {
+  background-color: #2d3748; /* Darker background for code blocks */
+  color: #e2e8f0;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 0.5em 0;
+  font-size: 0.9em;
+}
+
+.bot-message code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 85%;
+}
+
+.bot-message pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.bot-message blockquote {
+  border-left: 3px solid #adb5bd;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: #495057;
+}
+
+.bot-message table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.bot-message th, .bot-message td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.bot-message th {
+  background-color: #f1f1f1;
+}
