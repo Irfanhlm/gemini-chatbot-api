@@ -36,7 +36,7 @@ Make sure you have the following software installed on your machine:
 
 1.  **Clone this repository (or download the project files):**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/Irfanhlm/gemini-chatbot-api.git
     cd gemini-chatbot-api
     ```
 
